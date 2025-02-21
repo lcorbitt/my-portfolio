@@ -2,6 +2,7 @@ import Link from "next/link";
 import Nav from "./Nav";
 import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
+import MobileNav from "./ui/MobileNav";
 
 const Header = () => {
   return (
@@ -25,7 +26,7 @@ const Header = () => {
 
         {/* mobile nav */}
         <div className="xl:hidden">
-          <Menu />
+          <MobileNav />
         </div>
       </div>
     </header>
