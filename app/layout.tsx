@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import { AnimatePresence } from "framer-motion";
+import Footer from "@/components/Footer";
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -24,7 +25,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${jetBrainsMono.variable} font-primary antialiased`}>
         <Header />
+
         <PageTransition>{children}</PageTransition>
+
+        <Footer />
       </body>
     </html>
   );
