@@ -1,9 +1,20 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import { FiDownload } from 'react-icons/fi'
 import Socials from '@/components/ui/Socials'
 import Photo from '@/components/Photo'
 
 const Hero = () => {
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/lukas_corbitt_resume.pdf';
+    link.download = 'lukas_corbitt_resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  
   return (
     <div className="container mx-auto h-full">
       <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
@@ -19,7 +30,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col xl:flex-row items-center gap-8">
-            <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
+            <Button variant="outline" size="lg" className="uppercase flex items-center gap-2" onClick={handleDownload}>
               <span className="font-semibold">Download Resume</span>
               <FiDownload />
             </Button>
