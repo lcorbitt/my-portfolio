@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Nav from "./Nav";
 import { Button } from "./ui/button";
-import { Menu } from "lucide-react";
 import MobileNav from "./ui/MobileNav";
 
 const Header = () => {
@@ -20,7 +19,7 @@ const Header = () => {
           <Nav />
 
           <Link href="/contact">
-            <Button>Hire Me</Button>
+            <Button className="transition-all duration-300">Hire Me</Button>
           </Link>
         </div>
 

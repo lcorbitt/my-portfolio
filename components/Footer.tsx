@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="flex space-x-6">
             <a 
               href="https://github.com/lcorbitt" 
-              className="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+              className="hover:text-neutral-100 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -17,7 +17,7 @@ const Footer = () => {
             </a>
             <a 
               href="https://www.linkedin.com/in/lukas-corbitt/" 
-              className="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+              className="hover:text-neutral-100 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
