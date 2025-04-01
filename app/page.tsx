@@ -11,7 +11,6 @@ const Home = () => {
     <section className="h-full">
       <Hero />
       <Stats />
-      <Services />
     </section>
   );
 };
