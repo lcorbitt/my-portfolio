@@ -29,7 +29,6 @@ const links = [
 ];
 
 const Nav = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   return (
     <nav className="flex items-center gap-x-8">
