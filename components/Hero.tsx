@@ -22,7 +22,7 @@ const Hero = () => {
           <span className="text-xl">Full Stack Software Engineer & <br /> Web Developer</span>
 
           <h1 className="h1 mb-6">
-            Hello, I'm <br /> <span className="text-accent">Lukas Corbitt</span>
+            Hello, I&apos;m <br /> <span className="text-accent">Lukas Corbitt</span>
           </h1>
 
           <p className="max-w-[500px] mb-9 text-white/80">

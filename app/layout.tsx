@@ -3,7 +3,6 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
-import { AnimatePresence } from "framer-motion";
 import Footer from "@/components/Footer";
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
