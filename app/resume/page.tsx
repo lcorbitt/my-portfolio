@@ -48,7 +48,7 @@ import { motion } from "framer-motion";
 
 const about = {
   title: 'About me',
-  description: "Frontend-leaning full stack software engineer with 6+ years of experience building scalable and impactful applications across diverse industries, including aerospace innovation, insurance, e-commerce, and more.",
+  description: "I’m Lukas — a senior full-stack engineer and dad living in Fort Collins, Colorado. Most recently I've been building aerospace software for Urban Sky and e-commerce & insurance products at Hodinkee, but my experience spans across multiple industries. Outside of code, you’ll find me chasing speed on my motorcycle, carving fresh snow, or traveling the world. I’m driven by a love for high-impact software and take pride in bridging technical execution with real business value.",
   items: [
     {
       label: 'Name',
@@ -164,16 +164,21 @@ const education = {
       degree: 'Diploma',
       duration: '2007 - 2011',
     },
+    {
+      institution: "Missouri Valley College, Marshall, MO",
+      degree: 'Bachelor of Arts in Mass Communications',
+      duration: '2011 - 2015',
+    }
   ],
-  coursework: {
-    institutions: [
-      'Missouri Valley College',
-      'Metropolitan CC',
-      'Front Range CC'
-    ],
-    duration: '2011-2015',
-    description: 'Completed Coursework (Computer Science, Mass Communications, and General Studies)'
-  }
+  // coursework: {
+  //   institutions: [
+  //     'Missouri Valley College',
+  //     'Metropolitan CC',
+  //     'Front Range CC'
+  //   ],
+  //   duration: '2011-2015',
+  //   description: 'Completed Coursework (Computer Science, Mass Communications, and General Studies)'
+  // }
 }
 
 const skills = {
@@ -336,7 +341,7 @@ const Resume = () => {
               {/* education */}
               <TabsContent value="education" className="w-full">
                 <div className="flex flex-col gap-6">
-                  {education.items.map((item, index) => (
+                  {[...education.items].reverse().map((item, index) => (
                     <div key={index} className="flex flex-col gap-2 bg-[#27272c] p-6 rounded-lg">
                       <h3 className="text-xl font-semibold">{item.institution}</h3>
                       <span className="text-gray-300 italic">{item.degree}</span>
@@ -344,11 +349,11 @@ const Resume = () => {
                     </div>
                   ))}
                   
-                  <div className="flex flex-col gap-2 bg-[#27272c] p-6 rounded-lg">
+                  {/* <div className="flex flex-col gap-2 bg-[#27272c] p-6 rounded-lg">
                     <h3 className="text-xl font-semibold">{education.coursework.institutions.join(', ')}</h3>
                     <span className="text-gray-300 italic">{education.coursework.description}</span>
                     <span className="text-accent italic">{education.coursework.duration}</span>
-                  </div>
+                  </div> */}
                 </div>
               </TabsContent>
             </div>
