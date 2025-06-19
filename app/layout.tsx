@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jetBrainsMono.variable} font-primary antialiased`}>
+      <body className={`${jetBrainsMono.variable} font-primary antialiased h-screen`}>
         <Header />
 
         <PageTransition>{children}</PageTransition>

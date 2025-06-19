@@ -9,10 +9,10 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const projects = [
   {
     id: '01',
-    title: 'Portfolio Website',
-    description: 'My personal portfolio website built with modern technologies, featuring a clean design and smooth animations.',
-    tech: ['Next.js', 'Tailwind.css', 'Framer Motion'],
-    image: '/work/portfolio.jpg',
+    title: 'Urban Sky',
+    description: 'Contributed to a small engineering team building mission-critical software used by NASA, the FAA, and the U.S. Military, featuring real-time mission data, secure access, and hardware device communication.',
+    tech: ['React', 'TanstackQuery', 'Tailwind', 'Mantine', 'Node','NestJS', 'TypeORM', 'PostgreSQL', 'Docker', 'AWS', 'DataDog', 'Playwright'],
+    image: '/work/urban_sky.png',
     githubUrl: 'https://github.com/lukascorr/portfolio',
     liveUrl: 'https://lukascorr.com'
   },
@@ -135,9 +135,9 @@ const Work = () => {
                 <Image
                   src={currentProject.image}
                   width={1200}
-                  height={750}
+                  height={1500}
                   alt={currentProject.title}
-                  className="rounded-lg object-cover object-center"
+                  className="rounded-lg object-cover object-center h-96"
                   priority
                 />
               </motion.div>

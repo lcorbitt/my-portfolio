@@ -232,7 +232,7 @@ const skills = {
 
 const Resume = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center items-center py-12 xl:py-0 mt-12">
+    <section className="flex flex-col justify-center items-center py-12 xl:py-0 mt-12">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
