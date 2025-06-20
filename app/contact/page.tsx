@@ -31,11 +31,22 @@ const Contact = () => {
     try {
       setIsSubmitting(true);
 
+      // Debug: Log environment variables (remove in production)
+      console.log('Environment variables check:', {
+        serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+        recaptchaKey: process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
+      });
+
       // Validate environment variables
-      if (!process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ||
-          !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ||
-          !process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) {
-        throw new Error('EmailJS configuration is missing');
+      const missingVars = [];
+      if (!process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID) missingVars.push('NEXT_PUBLIC_EMAILJS_SERVICE_ID');
+      if (!process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID) missingVars.push('NEXT_PUBLIC_EMAILJS_TEMPLATE_ID');
+      if (!process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) missingVars.push('NEXT_PUBLIC_EMAILJS_PUBLIC_KEY');
+      
+      if (missingVars.length > 0) {
+        throw new Error(`EmailJS configuration is missing: ${missingVars.join(', ')}`);
       }
       
       let captchaToken = null;
