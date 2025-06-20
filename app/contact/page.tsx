@@ -175,7 +175,7 @@ const Contact = () => {
           {/* info side */}
           <div className="flex flex-col w-full xl:w-1/2 xl:pl-12 mt-12 xl:mt-0">
             <div className="flex flex-col gap-y-12">
-              <div className="flex items-center gap-x-4">
+              {/* <div className="flex items-center gap-x-4">
                 <div className="bg-[#1c1c21] w-[52px] h-[52px] rounded-lg flex items-center justify-center text-accent">
                   <FaPhone size={24} />
                 </div>
@@ -183,7 +183,7 @@ const Contact = () => {
                   <h3 className="text-xl font-semibold mb-1">Phone</h3>
                   <p className="text-gray-300">(816) 714-4107</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-center gap-x-4">
                 <div className="bg-[#1c1c21] w-[52px] h-[52px] rounded-lg flex items-center justify-center text-accent">
