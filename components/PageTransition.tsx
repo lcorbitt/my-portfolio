@@ -7,11 +7,11 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
 
   return (
-    <div style={{ position: 'relative', overflow: 'hidden' }}>
+    <div className="relative h-full overflow-hidden">
       <AnimatePresence initial={false} mode="wait">
         <motion.div
           key={pathname}
-          initial={{ opacity: 0, position: 'absolute', width: '100%', zIndex: 1 }}
+          initial={{ opacity: 0, position: 'absolute', width: '100%', height: '100%', zIndex: 1 }}
           animate={{ opacity: 1, position: 'relative', zIndex: 2 }}
           exit={{ opacity: 0, position: 'absolute', zIndex: 0 }}
           transition={{ duration: 0.15 }}

@@ -33,12 +33,12 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="flex flex-col justify-center items-center py-12 xl:py-0">
-      <div className="container mx-auto">
+    <section className="min-h-[calc(100vh-180px)] flex items-center justify-center">
+      <div className="container mx-auto px-4">
         <motion.div 
           initial={{ opacity: 0 }} 
-          animate={{ opacity: 1, y: 0 }} 
-          transition={{ delay: 0.5, duration: 0.5, ease: "easeIn" }}
+          animate={{ opacity: 1 }} 
+          transition={{ delay: 0.2, duration: 0.4, ease: "easeIn" }}
           className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
         >
           {services.map((service, index) => (
