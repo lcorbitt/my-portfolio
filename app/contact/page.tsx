@@ -146,11 +146,11 @@ const Contact = () => {
                 className="w-full bg-[#1c1c21] h-[180px] rounded-lg p-4 outline-none focus:ring-1 focus:ring-accent resize-none"
               ></textarea>
 
-              {!isDevelopment && (
+              {!isDevelopment && process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && (
                 <ReCAPTCHA
                   ref={captchaRef}
                   size="invisible"
-                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                 />
               )}
 

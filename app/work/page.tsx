@@ -10,7 +10,7 @@ const projects = [
   {
     id: '01',
     title: 'Urban Sky',
-    description: 'Was a member of a small engineering team building mission-critical software used by NASA, the FAA, and the U.S. Military, featuring real-time mission data, secure access, and hardware device communication.',
+    description: 'Played a key role on a small engineering team building mission-critical software used by NASA, the FAA, and the U.S. Military, featuring real-time mission data, secure access, and hardware device communication.',
     tech: ['React', 'TanstackQuery', 'Tailwind', 'Mantine', 'Node','NestJS', 'TypeORM', 'PostgreSQL', 'Docker', 'AWS', 'DataDog', 'Playwright'],
     image: '/work/urban_sky.png',
     githubUrl: 'https://github.com/lukascorr/portfolio',
