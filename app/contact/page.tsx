@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from '@emailjs/browser';
-import { FaPhone, FaEnvelope, FaMapMarker } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarker } from 'react-icons/fa';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 
