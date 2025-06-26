@@ -10,7 +10,7 @@ const projects = [
   {
     id: '01',
     title: 'Urban Sky',
-    description: 'Played a key role on a small engineering team building mission-critical software used by NASA, the FAA, and the U.S. Military, featuring real-time mission data, secure access, and hardware device communication.',
+    description: 'At Urban Sky, I played a key role on a small engineering team building mission-critical software used by NASA, the FAA, and the U.S. Military, featuring real-time mission data, secure access, and hardware device communication.',
     tech: ['React', 'TanstackQuery', 'Tailwind', 'Mantine', 'Node','NestJS', 'TypeORM', 'PostgreSQL', 'Docker', 'AWS', 'DataDog', 'Playwright'],
     image: '/work/urban_sky.png',
     githubUrl: 'https://github.com/lukascorr/portfolio',
@@ -18,21 +18,48 @@ const projects = [
   },
   {
     id: '02',
-    title: 'Interior Design Studio',
-    description: 'A modern interior design website showcasing unique home styling solutions and professional design services.',
-    tech: ['Next.js', 'Tailwind.css', 'Node.js'],
-    image: '/work/interior.jpg',
-    githubUrl: 'https://github.com/yourusername/interior',
-    liveUrl: 'https://interior-design.com'
+    title: 'Hodinkee',
+    description: 'At Hodinkee, I played a key role in developing features and internal tools that enhanced the experience of shopping for and insuring luxury and pre-owned timepieces. As part of a lean engineering team, I worked closely with product, design, marketing, and insurance to streamline flows, support new offerings, and elevate the overall user experience.',
+    tech: ['React', 'Tailwind', 'Ruby on Rails', 'PostgreSQL', 'Docker', 'AWS', 'DataDog', 'RSpec'],
+    image: '/work/hodinkee.png',
+    githubUrl: 'https://github.com/lukascorr/portfolio',
+    liveUrl: 'https://hodinkee.com'
   },
   {
     id: '03',
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce platform with real-time inventory, secure payments, and an intuitive admin dashboard.',
-    tech: ['React', 'Node.js', 'PostgreSQL'],
-    image: '/work/ecommerce.jpg',
-    githubUrl: 'https://github.com/yourusername/ecommerce',
-    liveUrl: 'https://ecommerce-platform.com'
+    title: 'Superconductor Studios',
+    description: 'Independently designed and developed the official website for Superconductor Studios., a custom home builder known for innovative, design-forward living spaces. Developed with React, Next.js, and TypeScript to highlight their portfolio through a sleek, high-performance interface.',
+    tech: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Framer Motion', 'Vercel'],
+    image: '/work/superconductor_studios.png',
+    githubUrl: 'https://github.com/lukascorr/portfolio',
+    liveUrl: 'https://bitwerks.com'
+  },
+  {
+    id: '04',
+    title: 'BitWerks',
+    description: 'Led the design and development of the official website for BitWerks, a bespoke software and web development studio I founded. Built with React, Next.js, and TypeScript to deliver a fast, modern, and scalable UX.',
+    tech: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Framer Motion', 'Vercel'],
+    image: '/work/bitwerks.png',
+    githubUrl: 'https://github.com/lukascorr/portfolio',
+    liveUrl: 'https://bitwerks.com'
+  },
+  {
+    id: '05',
+    title: 'Spectora',
+    description: 'At Spectora, I contributed to the development of tools that helped modernize the home inspection process for inspectors and their clients. Working cross-functionally with product, design, and customer support, I built and improved web and mobile features that streamlined scheduling, report writing, and client communication.',
+    tech: ['Vue', 'AWS', 'Cypress', 'Docker', 'PostgreSQL'],
+    image: '/work/spectora.png',
+    githubUrl: 'https://github.com/lukascorr/portfolio',
+    liveUrl: 'https://spectora.com'
+  },
+  {
+    id: '06',
+    title: 'Trace First',
+    description: 'Worked alongside a lean engineering team at Trace First to build and maintain a suite of integrated Ruby on Rails applications for the USDA. Developed data validation logic, REST APIs, and supported ETL workflows that powered regulatory and certification processes.',
+    tech: ['Vue', 'AWS', 'Cypress', 'Docker', 'PostgreSQL'],
+    image: '/work/trace_first.png',
+    githubUrl: 'https://github.com/lukascorr/portfolio',
+    liveUrl: 'https://spectora.com'
   }
 ];
 
@@ -137,7 +164,7 @@ const Work = () => {
                   width={1200}
                   height={1500}
                   alt={currentProject.title}
-                  className="rounded-lg object-cover object-center h-96"
+                  className="rounded-lg object-cover object-top h-96"
                   priority
                 />
               </motion.div>

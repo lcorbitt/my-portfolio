@@ -23,6 +23,7 @@ export default {
     },
   	extend: {
   		colors: {
+				gradient: 'linear-gradient(270deg, #B87CBF 20%, #59A8D9 80%)',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -35,8 +36,8 @@ export default {
   			},
   			primary: '#1c1c22',
         accent: {
-          DEFAULT: '#00ff99',
-  				hover: '#00e187',
+          DEFAULT: '#26cfa4',
+  				hover: '#1ca381',
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
@@ -68,5 +69,18 @@ export default {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function({ addUtilities }) {
+      addUtilities({
+        '.text-gradient': {
+          background: '-webkit-linear-gradient(270deg, #B87CBF 20%, #59A8D9 80%)',
+          '-webkit-background-clip': 'text',
+          '-webkit-text-fill-color': 'transparent',
+          'background-clip': 'text',
+          'color': 'transparent',
+        },
+      })
+    }
+  ],
 } satisfies Config;

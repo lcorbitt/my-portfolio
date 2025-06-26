@@ -19,7 +19,7 @@ const Header = () => {
           <Nav />
 
           <Link href="/contact">
-            <Button className="transition-all duration-300">Hire Me</Button>
+            <Button className="transition-all duration-300 text-white">Hire Me</Button>
           </Link>
         </div>
 

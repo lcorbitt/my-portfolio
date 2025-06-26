@@ -145,9 +145,11 @@ const Contact = () => {
                 className="w-full bg-[#1c1c21] h-[52px] rounded-lg px-4 outline-none focus:ring-1 focus:ring-accent appearance-none cursor-pointer"
               >
                 <option value="">Select a service</option>
+                <option value="web">Software or App Development</option>
                 <option value="web">Web Development</option>
-                <option value="app">App Development</option>
                 <option value="design">UI/UX Design</option>
+                <option value="design">Technical Consulting</option>
+                <option value="design">Other</option>
               </select>
 
               <textarea 

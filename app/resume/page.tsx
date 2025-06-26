@@ -48,7 +48,7 @@ import { motion } from "framer-motion";
 
 const about = {
   title: 'About me',
-  description: "I'm Lukas — a senior full-stack engineer and dad living in Fort Collins, Colorado. Most recently I've been building aerospace software for Urban Sky and e-commerce & insurance products at Hodinkee, but my experience spans across multiple industries. Outside of code, you'll find me chasing speed on my motorcycle, carving fresh snow, or traveling the world. I'm driven by a love for high-impact software and take pride in bridging technical execution with real business value.",
+  description: "I'm Lukas — a senior full-stack engineer and dad living in Fort Collins, Colorado. Most recently I've been building aerospace software for Urban Sky and e-commerce & insurance products at Hodinkee, but my experience spans across multiple industries. Outside of code, you'll find me on my motorcycle, snowboarding, or traveling the world. I'm driven by a love for high-impact software and take pride in bridging technical execution with real business value.",
   items: [
     {
       label: 'Name',
