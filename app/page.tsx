@@ -3,9 +3,7 @@
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import Services from "@/components/Services";
-import Link from "next/link"
-import { motion } from "framer-motion"
-import { BsArrowDownRight } from "react-icons/bs"
+import RevolvingText from "@/components/RevolvingText";
 
 const services = [
   {
@@ -41,6 +39,7 @@ const Home = () => {
       <Stats />
       <div className="border-t border-white/20 container pb-24"></div>
       <Services />
+      <RevolvingText />
     </section>
   );
 };
