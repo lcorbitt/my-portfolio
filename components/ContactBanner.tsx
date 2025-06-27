@@ -8,7 +8,7 @@ const ContactBanner = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
         {/* CTA Text */}
         <div className="text-3xl font-semibold text-dark text-center md:text-left">
-          Ready to start your next project? Let's work together!
+          Ready to start your next project? Let&apos;s work together!
         </div>
         {/* Button */}
         <Link href="/contact">

@@ -25,10 +25,6 @@ const Hero = () => {
 
           <span className="text-xl">Full Stack Software Engineer & <br /> Web Developer</span>
 
-          {/* <p className="max-w-[500px] mb-9 text-white/80">
-            I’m Lukas — a senior full-stack engineer and dad living in Fort Collins, Colorado. Most recently I've been building aerospace software for <a href="https://www.urbansky.com/" target="_blank" rel="noopener noreferrer">Urban Sky</a> and e-commerce & insurance products at <a href="https://www.hodinkee.com/" target="_blank" rel="noopener noreferrer">Hodinkee</a>.<br></br><br></br>Outside of code, you’ll find me on my motorcycle, snowboarding, or traveling the world. I’m driven by a love for high-impact software and take pride in bridging technical execution with real business value.
-          </p> */}
-
           <div className="flex flex-col xl:flex-row items-center gap-8 mt-8">
             <Button size="lg" className="uppercase flex items-center gap-2" onClick={handleDownload}>
               <span className="font-semibold text-white">Download Resume</span>
