@@ -26,15 +26,15 @@ const services = [
   {
     num: "04",
     title: "Technical Consulting",
-    description: "Request technical consulting services to help your business and organizations to improve your technical infrastructure and processes.",
+    description: "Request general technical consulting services to help your business and organizations to improve your technical infrastructure and processes.",
     href: "/services/technical-consulting"
   }
 ]
 
 const Services = () => {
   return (
-    <section className="min-h-[calc(100vh-180px)]">
-      <h2 className="text-5xl text-center text-brand mb-24 font-extrabold text-gradient">Services</h2>
+    <section className="min-h-[calc(100vh-180px)] py-24 bg-primary-light">
+      <h2 className="text-5xl text-center text-brand mb-24 font-bold text-gradient">Services</h2>
       <div className="flex items-center justify-center h-full">
         <div className="container mx-auto px-4">
           <motion.div 

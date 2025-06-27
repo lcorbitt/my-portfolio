@@ -35,10 +35,12 @@ export default {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: '#1c1c22',
+        'primary-light': '#27272c',
         accent: {
           DEFAULT: '#26cfa4',
   				hover: '#1ca381',
-  			},
+        },
+        dark: '#1c1c22',
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'
@@ -68,19 +70,5 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		}
   	}
-  },
-  plugins: [
-    require("tailwindcss-animate"),
-    function({ addUtilities }) {
-      addUtilities({
-        '.text-gradient': {
-          background: '-webkit-linear-gradient(270deg, #B87CBF 20%, #59A8D9 80%)',
-          '-webkit-background-clip': 'text',
-          '-webkit-text-fill-color': 'transparent',
-          'background-clip': 'text',
-          'color': 'transparent',
-        },
-      })
-    }
-  ],
+  }
 } satisfies Config;
