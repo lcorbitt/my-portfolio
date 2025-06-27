@@ -50,7 +50,7 @@ const about = {
   title: 'About me',
 description: (
   <>
-    I&apos;m <a href='https://www.linkedin.com/in/lukas-corbitt' className="text-gradient bg-clip-text underline hover:opacity-80 transition">Lukas Corbitt</a> — a senior full-stack engineer and dad living in Fort Collins, Colorado. Most recently, I've been building aerospace software for Urban Sky and e-commerce & insurance products at Hodinkee, but my experience spans across multiple industries. Outside of code, you&apos;ll find me on my motorcycle, snowboarding, or traveling the world. I&apos;m driven by a love for high-impact software and take pride in bridging technical execution with real business value.
+    I&apos;m <a href='https://www.linkedin.com/in/lukas-corbitt' className="text-gradient bg-clip-text underline hover:opacity-80 transition">Lukas Corbitt</a> — a senior full-stack engineer and dad living in Fort Collins, Colorado. Most recently, I&apos;ve been building aerospace software for Urban Sky and e-commerce & insurance products at Hodinkee, but my experience spans across multiple industries. Outside of code, you&apos;ll find me on my motorcycle, snowboarding, or traveling the world. I&apos;m driven by a love for high-impact software and take pride in bridging technical execution with real business value.
   </>
 ),
   items: [
@@ -170,19 +170,11 @@ const education = {
     },
     {
       institution: "Missouri Valley College, Marshall, MO",
-      degree: 'Bachelor of Arts in Mass Communications',
+      degree: 'Bachelor of Arts in Mass Communication',
+
       duration: '2011 - 2015',
     }
   ],
-  // coursework: {
-  //   institutions: [
-  //     'Missouri Valley College',
-  //     'Metropolitan CC',
-  //     'Front Range CC'
-  //   ],
-  //   duration: '2011-2015',
-  //   description: 'Completed Coursework (Computer Science, Mass Communications, and General Studies)'
-  // }
 }
 
 const skills = {
